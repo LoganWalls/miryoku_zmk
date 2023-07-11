@@ -1,0 +1,12 @@
+name: 'Build Example tbkmini nice_nano_v2'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["swweeep_left","swweeep_right"]'
+      alphas: '["qwerty"]'
+      nav: '["vi"]'
+      custom_config: '["#define MIRYOKU_TAP_QWERTY\n#define MIRYOKU_EXTRA_QWERTY"]'

@@ -1,4 +1,4 @@
-name: 'Build Example tbkmini nice_nano_v2'
+name: 'Build Swweeep'
 on: workflow_dispatch
 jobs:
   build:
